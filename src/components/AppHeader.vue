@@ -1,6 +1,62 @@
 <script>
     export default {
-        name: "AppHeader"
+        name: "AppHeader",
+        data(){
+        return{
+            menu:[
+                {
+                    text: 'Charaters',
+                    href: '#',
+                    current: false
+                },
+                {
+                    text: 'comics',
+                    href: '#',
+                    current: true
+                },
+                {
+                    text: 'movies',
+                    href: '#',
+                    current: false
+                },
+                {
+                    text: 'tv',
+                    href: '#',
+                    current: false
+                },
+                {
+                    text: 'games',
+                    href: '#',
+                    current: false
+                },
+                {
+                    text: 'collectibles',
+                    href: '#',
+                    current: false
+                },
+                {
+                    text: 'videos',
+                    href: '#',
+                    current: false
+                },
+                {
+                    text: 'fans',
+                    href: '#',
+                    current: false
+                },
+                {
+                    text: 'news',
+                    href: '#',
+                    current: false
+                },
+                {
+                    text: 'shop',
+                    href: '#',
+                    current: false
+                },
+            ]
+        }
+  }
     }
 </script>
 
@@ -15,16 +71,9 @@
 
             <nav>
                 <ul>
-                    <li><a href="#">Charaters</a></li>
-                    <li><a class="active" href="#">comics</a></li>
-                    <li><a href="#">movies</a></li>
-                    <li><a href="#">tv</a></li>
-                    <li><a href="#">games</a></li>
-                    <li><a href="#">collectibles</a></li>
-                    <li><a href="#">videos</a></li>
-                    <li><a href="#">fans</a></li>
-                    <li><a href="#">news</a></li>
-                    <li><a href="#">shop</a></li>
+                    <li v-for="(link, index) in menu" :key="index">
+                        <a :class="{'active': link.current}" href="#">{{link.text}}</a>
+                    </li>
                 </ul>
         
             </nav>

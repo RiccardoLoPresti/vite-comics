@@ -85,6 +85,7 @@
                     
                     li{
                         width:calc(100% / 5);
+                        min-width: 155px;
                         a{
                             @include centerFlex('both');
                             color: white;
@@ -96,7 +97,7 @@
                                 object-fit: scale-down;
                             }
                             .text{
-                                margin-left: 5%;
+                                margin-left: 3%;
                                 font-size: .8rem;
                             }
                         }

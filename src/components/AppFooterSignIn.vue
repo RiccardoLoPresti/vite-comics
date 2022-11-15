@@ -1,6 +1,37 @@
 <script>
     export default {
-        name: "AppFooter"
+        name: "AppFooter",
+        data(){
+            return{
+                elements:[
+                {
+                    href: '#',
+                    img: 'footer-facebook.png'
+                },
+                {
+                    href: '#',
+                    img: 'footer-periscope.png'
+                },
+                {
+                    href: '#',
+                    img: 'footer-pinterest.png'
+                },
+                {
+                    href: '#',
+                    img: 'footer-twitter.png'
+                },
+                {
+                    href: '#',
+                    img: 'footer-youtube.png'
+                },
+                ]
+            }
+        },
+        methods:{
+            getPathImg(imgName){
+                return new URL (`../assets/img/${imgName}`, import.meta.url).href
+            }
+        }
     }
 </script>
 
@@ -15,11 +46,11 @@
         <div class="socials">
             <h3>Follow us</h3>
             <ul>
-                <li><a href="#"><img src="../assets/img/footer-facebook.png" alt="fb"></a></li>
-                <li><a href="#"><img src="../assets/img/footer-facebook.png" alt="fb"></a></li>
-                <li><a href="#"><img src="../assets/img/footer-facebook.png" alt="fb"></a></li>
-                <li><a href="#"><img src="../assets/img/footer-facebook.png" alt="fb"></a></li>
-                <li><a href="#"><img src="../assets/img/footer-facebook.png" alt="fb"></a></li>
+                <li v-for="(element, index) in elements" :key="index">
+                    <a href="#">
+                        <img :src="getPathImg(element.img)" alt="fb">
+                    </a>
+                </li>
             </ul>
         </div>
 
@@ -63,6 +94,9 @@
             }
             ul{
                 @include centerFlex();
+                a:hover img{
+                    filter: brightness(160%);
+                }
             }
             img{
                 margin: 0px 10px;

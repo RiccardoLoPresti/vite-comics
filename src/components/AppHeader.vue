@@ -95,6 +95,7 @@
         justify-content: space-between;
         .logo img{
             width: 80px;
+            min-width: 80px;
         }
         ul{
             @include centerFlex();
@@ -117,7 +118,4 @@
         }
         
     }
-    
-
-    
 </style>

@@ -1,6 +1,42 @@
 <script>
     export default {
-        name: "AppCallToAction"
+        name: "AppCallToAction",
+        data(){
+            return{
+                elements:[
+                {
+                    text: 'digital comics',
+                    href: '#',
+                    img: 'buy-comics-digital-comics.png'
+                },
+                {
+                    text: 'dc merchandise',
+                    href: '#',
+                    img: 'buy-comics-merchandise.png'
+                },
+                {
+                    text: 'subscription',
+                    href: '#',
+                    img: 'buy-comics-subscriptions.png'
+                },
+                {
+                    text: 'comic shop locator',
+                    href: '#',
+                    img: 'buy-comics-shop-locator.png'
+                },
+                {
+                    text: 'dc power visa',
+                    href: '#',
+                    img: 'buy-dc-power-visa.svg'
+                },
+                ]
+            }
+        },
+        methods:{
+            getPathImg(imgName){
+                return new URL (`../assets/img/${imgName}`, import.meta.url).href
+            }
+        }
     }
 </script>
 
@@ -8,47 +44,16 @@
 
   <section>
     <div class="container">
+
         <nav>
             <ul>
-                <li>
+                <li v-for="(element, index) in elements" :key="index" >
                     <a href="#">
                         <div class="image">
-                            <img src="../assets/img/buy-comics-digital-comics.png" alt="">
+                            <img :src="getPathImg(element.img)" alt="">
                         </div>
                         <div class="text">
-                            <span>digital comics</span>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="image">
-                            <img src="../assets/img/buy-comics-merchandise.png" alt="">
-                        </div>
-                        <div class="text">
-                            <span>dc merchandise</span>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="image">
-                            <img src="../assets/img/buy-comics-subscriptions.png" alt="">
-                        </div>
-                        <div class="text">
-                            <span>subscription</span>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="image">
-                            <img src="../assets/img/buy-comics-shop-locator.png" alt="">
-                        </div>
-                        <div class="text">
-                            <span>comic shop locator</span>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="image">
-                            <img src="../assets/img/buy-dc-power-visa.svg" alt="">
-                        </div>
-                        <div class="text">
-                            <span>dc power visa</span>
+                            <span>{{element.text}}</span>
                         </div>
                     </a>
                 </li>
@@ -71,32 +76,35 @@
         height: 150px;
         .container{
             height: 100%;
-            width: 100%;
-            @include centerFlex('both');
-            li{
-                @include centerFlex();
-                a{
-                    color:white;
-                    text-transform: uppercase;
-                    width: 100%;
-                    padding: 0px 25px; 
-                    @include centerFlex();
-                    img{
-                        width: 55px;
-                        min-width: 40px;
-                        height: 55px;
-                        object-fit:scale-down;
-                    }
-                    .text{
-                        margin-left: 10px;
-                    }
-                    &:hover{
-                        text-decoration: underline;
+            @include centerFlex('vertical');
+            justify-content: center;
+            nav{
+                width: 100%;
+                ul{
+                    @include centerFlex('vertical');
+                    
+                    li{
+                        width:calc(100% / 5);
+                        a{
+                            @include centerFlex('both');
+                            color: white;
+                            text-transform: uppercase;
+                            img{
+                                width: 55px;
+                                height: 55px;
+                                min-width: 55px;
+                                object-fit: scale-down;
+                            }
+                            .text{
+                                margin-left: 5%;
+                                font-size: .8rem;
+                            }
+                        }
+                        
                     }
                 }
             }
-            
         }
+        
     }
-
 </style>

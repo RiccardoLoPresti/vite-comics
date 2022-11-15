@@ -3,6 +3,7 @@
     import AppMain from '../src/components/AppMain.vue';
     import AppCallToAction from '../src/components/AppCallToAction.vue';
     import AppFooter from '../src/components/AppFooter.vue';
+    import AppFooterSignIn from '../src/components/AppFooterSignIn.vue';
 
     export default {
         name:"App",
@@ -10,7 +11,8 @@
             AppHeader,
             AppMain,
             AppCallToAction,
-            AppFooter
+            AppFooter,
+            AppFooterSignIn
         }
     }
 </script>
@@ -20,6 +22,7 @@
     <AppMain/> 
     <AppCallToAction/> 
     <AppFooter/> 
+    <AppFooterSignIn/> 
 </template>
 
 

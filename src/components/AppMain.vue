@@ -23,6 +23,6 @@
         background-color:#1c1c1c;
         padding-top: 50px;
         color: white;
-        min-height: 130px;
+        min-height: 270px;
     }
 </style>

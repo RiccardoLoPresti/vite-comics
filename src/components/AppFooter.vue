@@ -116,6 +116,9 @@
                     a{
                         font-size: .8rem;
                         color: rgb(182, 182, 182);
+                        &:hover{
+                            text-decoration: underline;
+                        }
                     }
                 }
                 .sign-up{

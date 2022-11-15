@@ -50,7 +50,7 @@
                 <li v-for="(element, index) in elements" :key="index" >
                     <a href="#">
                         <div class="image">
-                            <img :src="getPathImg(element.img)" alt="">
+                            <img :src="getPathImg(element.img)" :alt="element.img">
                         </div>
                         <div class="text">
                             <span>{{element.text}}</span>
@@ -90,6 +90,9 @@
                             @include centerFlex('both');
                             color: white;
                             text-transform: uppercase;
+                            &:hover{
+                                text-decoration: underline;
+                            }
                             img{
                                 width: 55px;
                                 height: 55px;

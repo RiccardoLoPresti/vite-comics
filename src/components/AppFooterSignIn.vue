@@ -48,7 +48,7 @@
             <ul>
                 <li v-for="(element, index) in elements" :key="index">
                     <a href="#">
-                        <img :src="getPathImg(element.img)" alt="fb">
+                        <img :src="getPathImg(element.img)" :alt="element.img">
                     </a>
                 </li>
             </ul>
@@ -73,6 +73,7 @@
             justify-content: space-between;
             .sign-up{
                 height: 100%;
+                min-width: 150px;
                 @include centerFlex('vertical');
                     a{
                         color: white;
@@ -90,7 +91,8 @@
             h3{
                 text-transform: uppercase;
                 color: $primary-color;
-                margin-right: 20px;
+                padding-right: 25px;
+                font-size: 1rem;
             }
             ul{
                 @include centerFlex();
@@ -100,6 +102,7 @@
             }
             img{
                 margin: 0px 10px;
+                min-width: 35px;
             }
         }
     }

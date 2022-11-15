@@ -61,8 +61,8 @@
 
             &:hover,
             &.active{
-                color: $main-color;
-                border-bottom: 4px solid $main-color;
+                color: $primary-color;
+                border-bottom: 4px solid $primary-color;
             }
             
         }

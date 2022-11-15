@@ -7,7 +7,7 @@
 <template>
     <main>
         <div class="container">
-
+        -->CONTENT MAIN HERE
         </div>
     </main>
     
@@ -21,6 +21,8 @@
 
     main{
         background-color:#1c1c1c;
-        min-height: 90px;
+        padding-top: 50px;
+        color: white;
+        min-height: 130px;
     }
 </style>

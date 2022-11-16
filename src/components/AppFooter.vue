@@ -11,53 +11,63 @@
 
         <div class="container">
 
-            <div class="bg-logo"></div>
-
             <nav>
-                <div class="link">
-                    <h3>dc comics</h3>
-                    <ul>
-                        <li><a href="#">cose</a></li>
-                        <li><a href="#">cose</a></li>
-                        <li><a href="#">cose</a></li>
-                        <li><a href="#">cose</a></li>
-                        <li><a href="#">cose</a></li>
-                        <li><a href="#">cose</a></li>
-                        <li><a href="#">cose</a></li>
-                    </ul>
-                </div>
-                <div class="link">
-                    <h3>dc comics</h3>
-                    <ul>
-                        <li><a href="#">cose</a></li>
-                        <li><a href="#">cose</a></li>
-                        <li><a href="#">cose</a></li>
-                        <li><a href="#">cose</a></li>
-                        <li><a href="#">cose</a></li>
-                        <li><a href="#">cose</a></li>
-                        <li><a href="#">cose</a></li>
-                    </ul>
-                </div>
-                <div class="link">
-                    <h3>dc comics</h3>
-                    <ul>
-                        <li><a href="#">cose</a></li>
-                        <li><a href="#">cose</a></li>
-                        <li><a href="#">cose</a></li>
-                        <li><a href="#">cose</a></li>
-                        <li><a href="#">cose</a></li>
-                        <li><a href="#">cose</a></li>
-                        <li><a href="#">cose</a></li>
-                    </ul>
-                </div>
-                <div class="link">
-                    <h3>dc comics</h3>
-                    <ul>
-                        <li><a href="#">cose</a></li>
-                        <li><a href="#">cose</a></li>
-
-                    </ul>
-                </div>
+                <ul>
+                    <li>
+                        <h3>DC COMICS</h3>
+                        <a href="#">link</a>
+                        <a href="#">link</a>
+                        <a href="#">link</a>
+                        <a href="#">link</a>
+                        <a href="#">link</a>
+                        <a href="#">link</a>
+                        <a href="#">link</a>
+                        <a href="#">link</a>
+                      
+                    </li>
+                    <li>
+                        <h3>DC COMICS</h3>
+                        <a href="#">link</a>
+                        <a href="#">link</a>
+                    </li>
+                    <li>
+                        <h3>DC COMICS</h3>
+                        <a href="#">link</a>
+                        <a href="#">link</a>
+                        <a href="#">link</a>
+                        <a href="#">link</a>
+                        <a href="#">link</a>
+                        <a href="#">link</a>
+                        <a href="#">link</a>
+                        <a href="#">link</a>
+                        <a href="#">link</a>
+                        <a href="#">link</a>
+                        <a href="#">link</a>
+                        <a href="#">link</a>
+                        <a href="#">link</a>
+                        <a href="#">link</a>
+                        <a href="#">link</a>
+                    </li>
+                    <li>
+                        <h3>DC COMICS</h3>
+                        <a href="#">link</a>
+                        <a href="#">link</a>
+                        <a href="#">link</a>
+                        <a href="#">link</a>
+                        <a href="#">link</a>
+                        <a href="#">link</a>
+                        <a href="#">link</a>
+                        <a href="#">link</a>
+                        <a href="#">link</a>
+                        <a href="#">link</a>
+                        <a href="#">link</a>
+                        <a href="#">link</a>
+                        <a href="#">link</a>
+                        <a href="#">link</a>
+                        <a href="#">link</a>
+                    </li>
+                </ul>
+                
                 
             </nav>
 
@@ -78,40 +88,37 @@
     footer{
         height: 370px;
         background-color: #303030;
-
         .main-wrapper{
             background-image: url('../assets/img/footer-bg.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             .container{
                 position: relative;
-                .bg-logo{
-                    background-image:url('../assets/img/dc-logo-bg.png') ;
-                    background-size: cover;
-                    background-position: center;
-                    right: 0;
-                    position: absolute;
-                    width: 560px;
-                    height: 370px;
-                }
-                nav{
-                    z-index: 999;
-                    position: relative;
-                    padding-top: 50px;
-                    padding-bottom: 60px;
-                    height: 370px;
-                    width: 480px;
-                    @include centerFlex('vertical');
-                    flex-wrap: wrap;
-                    .link{
-                        margin-right: 50px;
-                        margin-bottom: 20px;
+                background-image:url('../assets/img/dc-logo-bg.png') ;
+                background-repeat: no-repeat;
 
+                nav{
+                    padding-top: 40px;
+                    padding-bottom: 50px;
+                    height: 370px;
+                    width: 25%;
+                    ul{
+                        height: 280px;
+                        display: flex;
+                        flex-grow: 0;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                        li{
+                            display: flex;
+                            flex-direction: column;
+                            margin-bottom: 18px;
+
+                        }
                     }
                     h3{
                         color:white;
                         text-transform: uppercase;
-                        margin-bottom: 20px;
+                        margin-bottom: 18px;
                     }
                     a{
                         font-size: .8rem;

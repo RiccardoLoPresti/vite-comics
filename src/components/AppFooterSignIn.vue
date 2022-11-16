@@ -66,6 +66,7 @@
 
     footer{
         height: 110px;
+        width: 100%;
         background-color: #303030;
         .container{
             height: 100%;

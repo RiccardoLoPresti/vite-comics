@@ -165,9 +165,11 @@
 @use '../src/styles/partials/mixin' as *;
 
     footer{
+        width: 100%;
         height: 370px;
         background-color: #303030;
         .main-wrapper{
+            width: 100%;
             background-image: url('../assets/img/footer-bg.jpg');
             background-repeat: no-repeat;
             background-size: cover;
@@ -176,6 +178,7 @@
                 background-repeat: no-repeat;
                 background-position:right ;
                 nav{
+                    width: 100%;
                     padding-top: 37px;
                     padding-bottom: 0px;
                     height: 370px;

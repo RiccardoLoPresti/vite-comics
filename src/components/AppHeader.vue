@@ -95,7 +95,7 @@
         justify-content: space-between;
         .logo img{
             width: 80px;
-            min-width: 80px;
+            min-width: 40px;
         }
         ul{
             @include centerFlex();
@@ -107,7 +107,7 @@
             text-transform: uppercase;
             margin:0px 15px;
             padding-bottom: 45px;
-            padding-top: 50px;
+            padding-top: 40px;
 
             &:hover,
             &.active{

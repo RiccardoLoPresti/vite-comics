@@ -20,7 +20,9 @@ import cards from '../data/dc-comics'
 <template>
     <main>
         <div class="container">
-            <AppCards v-for="(card, index) in cards" :key="index" :cardImg="card.thumb" :cardTitle="card.series"/>
+            <AppCards v-for="(card, index) in cards" :key="index" 
+            :cardImg="card.thumb" 
+            :cardTitle="card.series"/>
         </div>
     </main>
     

@@ -92,11 +92,12 @@
             h3{
                 text-transform: uppercase;
                 color: $primary-color;
-                padding-right: 25px;
+                padding-right: 5px;
                 font-size: 1rem;
             }
             ul{
                 @include centerFlex();
+                flex-wrap: wrap;
                 a:hover img{
                     filter: brightness(160%);
                 }

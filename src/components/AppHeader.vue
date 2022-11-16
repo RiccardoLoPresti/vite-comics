@@ -99,6 +99,7 @@
         }
         ul{
             @include centerFlex();
+            flex-wrap: wrap;
         }
         a{
             color: #464646;

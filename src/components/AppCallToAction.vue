@@ -82,7 +82,7 @@
                 width: 100%;
                 ul{
                     @include centerFlex('vertical');
-                    
+                    flex-wrap: wrap;
                     li{
                         width:calc(100% / 5);
                         min-width: 155px;

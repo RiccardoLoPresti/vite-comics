@@ -25,7 +25,7 @@
     <AppMain/> 
     <AppCallToAction/> 
     <AppFooter/> 
-    <AppFooterSignIn/> 
+    <AppFooterSignIn/>
 </template>
 
 

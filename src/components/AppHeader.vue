@@ -56,7 +56,13 @@
                 },
             ]
         }
-  }
+    },
+    methods:{
+            getActive(index){
+                this.menu.forEach(element => element.current = false)
+                this.menu[index].current = true
+            }
+        },
     }
 </script>
 
@@ -72,7 +78,8 @@
             <nav>
                 <ul>
                     <li v-for="(link, index) in menu" :key="index">
-                        <a :class="{'active': link.current}" href="#">{{link.text}}</a>
+                        <a :class="{'active': link.current}" 
+                        @click="getActive(index)" href="#">{{link.text}}</a>
                     </li>
                 </ul>
         

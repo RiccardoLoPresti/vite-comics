@@ -50,7 +50,7 @@ import cards from '../data/dc-comics'
     main{
         background-color:#1c1c1c;
         padding-top: 50px;
-        padding-bottom: 80px;
+        padding-bottom: 20px;
         color: white;
     }
     .button{
